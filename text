@@ -1,0 +1,26 @@
+@app.route('/updateemployee')
+def updateemployee():
+    return render_template('updateemployee.html')
+
+def logout():
+    render_template('home.html')
+
+@app.route('/updatestudent')
+def updatestudent():
+    return render_template('updatestudent.html')
+
+@app.route('/addstudent')
+def addstudent():
+    return render_template('addstudent.html')
+
+@app.route('/singlstudentprofile')
+def singlstudentprofile():
+    return render_template('singlestudentprofile.html')
+
+@app.route('/updatestudentperformance')
+def updatestudentperformance():
+    return render_template('updatestudentperformance.html')
+
+@app.route('/addstudentperformance')
+def addstudentperformance():
+    return render_template('addstudentperformance.html') 
