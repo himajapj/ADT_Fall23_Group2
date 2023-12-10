@@ -1,6 +1,5 @@
 from flask import Flask, url_for, request, redirect, session
 from flask.templating import render_template
-import mysql.connector
 from werkzeug.security import generate_password_hash, check_password_hash
 import os
 from database import get_database
@@ -15,14 +14,6 @@ def get_current_user():
         user = session['user']
     return user
 
-config = {
-  'user': 'root',
-  'password': 'root',
-  'host': '127.0.0.1',
-  'port': 8889,
-  'database': 'University_Data',
-  'raise_on_warnings': True
-}
 
 # mydb = mysql.connector.connect(**config)
 # my_cursor = mydb.cursor(dictionary=True)
